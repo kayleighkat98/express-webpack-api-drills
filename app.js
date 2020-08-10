@@ -33,3 +33,10 @@ app.get('/queryViewer', (req, res) =>{
   console.log(req.query);
   res.end();
 });
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//DRILL 2   
+
+app.get('/cipher',(req,res)=>{
+    
+})
