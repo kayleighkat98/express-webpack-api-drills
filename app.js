@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const { text } = require('express');
 
 
 const app = express();
@@ -38,5 +39,14 @@ app.get('/queryViewer', (req, res) =>{
 //DRILL 2   
 
 app.get('/cipher',(req,res)=>{
-    
+    const { text, shift } = req.query;
+
 })
+
+const base = 'A'.charCodeAt(0);
+const cipher = text
+  .toUpperCase()
+  .split(' ')
+  .map(char => {
+    const code = char.charCodeAt(0);
+  })
