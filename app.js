@@ -1,6 +1,9 @@
 const express = require('express');
+const morgan = require('morgan');
+
 
 const app = express();
+app.use(morgan('dev'));
 
 
 app.get ('/',(req,res)=>{
@@ -12,7 +15,15 @@ app.listen(8000,()=>{
 });
 
 app.get('/sum', (req, res)=>{
-  const a = 2;
-  const b = 3;
-  res.send('the sum of ' + ${'a'} + 'and'+ ${'b'}+'is blank');
+  const {a,b} = req.query;
+  // const a = 2;
+  // const b = 3;
+  res.send(`the sum of ${req.a} and ${req.b} is blank`);
+
+  // if(!a) {
+  //   return res
+  //       .status(400)
+  //       .send('must be a');
+  // }
+
 });
