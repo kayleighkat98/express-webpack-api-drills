@@ -1,0 +1,24 @@
+{
+  "name": "express-webpack-api-drills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayleighkat98/express-webpack-api-drills.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayleighkat98/express-webpack-api-drills/issues"
+  },
+  "homepage": "https://github.com/kayleighkat98/express-webpack-api-drills#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
