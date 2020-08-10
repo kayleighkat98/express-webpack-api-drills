@@ -15,15 +15,21 @@ app.listen(8000,()=>{
 });
 
 app.get('/sum', (req, res)=>{
-  const {a,b} = req.query;
+  const responseText = `the sum of ${parseInt(req.query.a)} and ${parseInt(req.query.b)} is ${parseInt(req.query.a)+parseInt(req.query.b)}`;
+  //const {a,b} = req.query;
   // const a = 2;
   // const b = 3;
-  res.send(`the sum of ${req.a} and ${req.b} is blank`);
+  console.log(req.query);
+  res.send(responseText);
 
   // if(!a) {
   //   return res
   //       .status(400)
   //       .send('must be a');
   // }
-
+ 
+});
+app.get('/queryViewer', (req, res) =>{
+  console.log(req.query);
+  res.end();
 });
